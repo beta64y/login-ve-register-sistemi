@@ -3,8 +3,10 @@
     static void Main(string[] args)
     {
         List<LoginSystem> users = new List<LoginSystem>();
+        users.Add(new LoginSystem("admin", "admin", "admin@gmail.com", "admin123"));
         Console.WriteLine("Commands You can use: \n1. /register\n2. /login\n3. /exit");
         while (true)
+        
         {
 
             
@@ -122,10 +124,10 @@
 }
 public class LoginSystem
 {
-    public string _name = "admin";
-    public string _surname = "admin";
-    public string _email = "admin@gmail.com";
-    public string _password = "admin123";
+    public string _name ;
+    public string _surname ;
+    public string _email ;
+    public string _password ;
     public  LoginSystem(string name, string surname, string email, string password)
    
     {
